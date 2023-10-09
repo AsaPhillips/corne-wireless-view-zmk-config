@@ -8,22 +8,38 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+/* @TODO
+[ ] Key repeate for thumb buttons
+[ ] Look into cross-hand only modifiers? I don't know what that even is!
+[ ] Look into quick-tap-ms to get key repeate?
+*/
 / {
+        behaviors {
+                hm: homerow_mods {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOMEROW_MODS";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <200>;
+                        quick-tap-ms = <50>; // @TEST
+                        flavor = "tap-preferred";
+                        bindings = <&kp>, <&kp>;
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |      |
+// | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |      |
 //                    | ESC | LWR | TAB |   | ENT | RSE  | DEL |
                         label = "Base";
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                     &kp ESC &mo 1 &kp TAB   &kp RET &mo 2 &kp DELETE
+   &kp TAB   &kp Q      &kp W      &kp E       &kp R       &kp T    &kp Y   &kp U       &kp I       &kp O      &kp P         &none
+   &kp ESC   &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G    &kp H   &hm RSHFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &kp SQT
+   &kp LSHFT &kp Z      &kp X      &kp C       &kp V       &kp B    &kp N   &kp M       &kp COMMA   &kp DOT    &kp FSLH      &none
+                                   &kp ESC     &mo 1     &kp TAB    &kp RET &mo 2 &kp DELETE
                         >;
                 };
                 lower_layer {
