@@ -65,7 +65,7 @@
         };
 
         code_layer {
-            lable = "Code";
+            label = "Code";
             bindings = <
 &trans  &trans    &trans    &trans     &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
