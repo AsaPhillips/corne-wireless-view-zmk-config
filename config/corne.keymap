@@ -99,30 +99,30 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans     &trans    &trans    &trans  &trans  &trans
             >;
         };
 
         sym_layer {
             label = "Symbol";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
             >;
         };
 
         num_layer {
             label = "Number";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
             >;
         };
 
@@ -130,10 +130,10 @@
         fun_layer {
             label = "Func";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
             >;
         };
     };
