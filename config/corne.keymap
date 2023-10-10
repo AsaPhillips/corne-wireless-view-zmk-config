@@ -30,15 +30,6 @@
 #define FUN   7
 
 
-// MIRYOKU_CLIPBOARD_WIN
-#define U_RDO LC(Y)
-#define U_PST LC(V)
-#define U_CPY LC(C)
-#define U_CUT LC(X)
-#define U_UND LC(Z)
-
-
-
 / {
         behaviors {
                 hm: homerow_mods {
@@ -67,7 +58,7 @@
                 nav_layer {
                         label = "Nav";
                         bindings = <
-   &trans &trans   &trans   &trans    &trans    &trans    &kp U_CPY  &kp U_UND     &kp U_RDO &kp U_CUT &kp U_PST  &trans
+   &trans &trans   &trans   &trans    &trans    &trans    &kp LC(C)  &kp LC(Z)     &kp LC(Y) &kp LC(X) &kp LC(V)  &trans
    &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &kp LEFT   &kp DOWN      &kp UP    &kp RIGHT &kp CAPS   &trans
    &trans &trans   &trans   &trans    &trans    &trans    &kp HOME   &kp PG_DN     &kp PG_UP &kp END   &kp INSERT &trans
                             &trans    &trans    &trans    &kp ENTER  &kp BACKSPACE &kp DELETE
