@@ -109,11 +109,11 @@
         sym_layer {
             label = "Symbol";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans   &trans   &trans
-                        &trans  &trans  &trans    &trans  &trans    &trans
-            >;
+&trans  &kp LEFT_BRACE &kp AMPERSAND   &kp ASTERISK &kp LPAR  &kp RBRC     &trans  &trans    &trans    &trans   &trans   &trans
+&trans  &kp COLON      &kp DOLLAR      &kp PERCENT  &kp CARET &kp PLUS     &trans  &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &trans
+&trans  &kp TILDE      &kp EXCLAMATION &kp AT       &kp HASH  &kp PIPE     &trans  &trans    &trans    &trans   &trans   &trans
+                                       &kp LPAR     &kp RPAR  &kp UNDER    &trans  &trans    &trans
+            >; 
         };
 
         num_layer {
