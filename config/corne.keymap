@@ -8,10 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 /* @TODO
-[ ] Key repeate for thumb buttons
-[ ] Key repeate for home row mods!
 [ ] Look into cross-hand only modifiers? I don't know what that even is!
-[ ] Look into quick-tap-ms to get key repeate?
 [ ] Figure out how I do caps word currently? 
 [ ] Figure out how to replace CG_TOGG in ZMK, to support both win and macos
 [ ] Figure out where Blue thooth commands go #include <dt-bindings/zmk/bt.h>
@@ -34,20 +31,17 @@
             label = "home row mods";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>; // @TEST
+            quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        // &lt {
-        //     tapping-term-ms = <200>;
-        // };
 
         u_lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "layer tap";
             #binding-cells = <2>;
             tapping_term_ms = <200>;
+            quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
