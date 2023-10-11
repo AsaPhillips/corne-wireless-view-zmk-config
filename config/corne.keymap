@@ -49,11 +49,32 @@
     };
 
     macros {
-        pair_par: pair_par {
+        pair_pr: pair_pr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
-            label = "PAIR_PAR";
+            label = "Pair Parenthesis";
+        };
+
+        pair_br: pair_br {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "Pair Brackets";
+        };
+
+        pair_cb: pair_cb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "Pair Braces";
+        };
+
+        pair_ab: pair_ab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            label = "Pair Angles";
         };
     };
 
@@ -83,10 +104,10 @@
         code_layer {
             label = "Code";
             bindings = <
-&trans  &trans    &trans    &trans     &trans      &trans    &trans  &trans  &trans    &trans  &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans  &trans  &trans    &trans  &trans  &trans
-&trans  &trans    &trans    &trans     &trans      &trans    &trans  &trans  &trans    &trans  &trans  &trans
-                            &trans     &trans      &trans    &trans  &trans  &mo BLUE
+&trans  &trans    &trans    &trans     &trans      &trans    &trans  &pair_br &trans    &trans  &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &trans  &pair_pr &pair_cb  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans      &trans    &trans  &pair_ab &trans    &trans  &trans  &trans
+                            &trans     &trans      &trans    &trans  &trans   &mo BLUE
             >;
         };
 
