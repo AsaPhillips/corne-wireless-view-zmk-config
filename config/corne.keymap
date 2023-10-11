@@ -116,7 +116,7 @@
             label = "Code";
             bindings = <
 &trans  &trans    &trans    &trans     &trans      &trans    &trans       &pair_br &trans      &trans       &trans  &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &kp K_VOL_DN &pair_pr  &pair_cb   &kp K_VOL_UP &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &kp C_VOL_DN &pair_pr  &pair_cb   &kp C_VOL_UP &trans  &trans
 &trans  &trans    &trans    &trans     &trans      &trans    &trans       &pair_ab  &trans     &trans       &trans  &trans
                             &trans     &trans      &trans    &kp C_STOP   &td_ppn   &kp C_MUTE
             >;
