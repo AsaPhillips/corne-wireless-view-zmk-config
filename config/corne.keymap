@@ -10,8 +10,6 @@
 
 /* @TODO
 [ ] Look into cross-hand only modifiers? I don't know what that even is!
-[ ] Home row mods are meduim brokn rn. If I do <a><t> very fast, we lose the t, and only the a comes out.
-[ ] Figure out how I do caps word currently? 
 [ ] Figure out how to replace CG_TOGG in ZMK, to support both win and macos
     Maybe the solution is to just swap them at the OS level in macos?
 [ ] Better Alt-tab support?
@@ -129,7 +127,7 @@
             label = "Nav";
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &kp LA(TAB)    &kp LC(C)  &kp LC(Z)      &kp LC(Y)   &kp LC(X)  &kp LC(V)   &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans         &kp LEFT   &kp DOWN       &kp UP      &kp RIGHT  &kp CAPS    &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans         &kp LEFT   &kp DOWN       &kp UP      &kp RIGHT  &caps_word  &trans
 &trans  &trans    &trans    &trans     &trans     &trans         &kp HOME   &kp PG_DN      &kp PG_UP   &kp END    &kp INSERT  &trans
                             &trans     &trans     &trans         &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
