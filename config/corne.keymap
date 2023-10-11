@@ -53,7 +53,7 @@
             label = "Tap Dance Play/Pause, Next";
             #binding-cells = <0>;
             // Lower than normal tapping term here, since the delay to <play/pause> is noticeable at 200
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>;
         };
     };
