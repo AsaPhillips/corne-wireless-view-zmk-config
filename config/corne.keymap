@@ -61,7 +61,7 @@
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <18, 19, 20, 21>; // Ignore arrow keys
+            ignored-key-positions = <18 19 20 21>; // Ignore arrow keys
         };
     };
 
